@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 600px;
+    height: 220px;
+}
+.btn{
+    height: 40px;
+    background-color: #909999;
+    color: #0c5f3b;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+.btn:hover{
+  background-color: rgb(16, 163, 139);
+}
+
+
+  .acitve{
+    display: none;
+  }
+
+  #p_content{
+    transition: 0.5;
+  }
+
+
+
+  

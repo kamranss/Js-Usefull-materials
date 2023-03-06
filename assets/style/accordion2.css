@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+.acc-item{
+    background-color:rgb(209, 231, 224);
+    width: 100%;
+    border: 1px solid grey;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.acc-item .acc-button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.acc-item .acc-content{
+    max-height: 0px;
+    overflow: hidden;
+    transition:  max-height 0.5s;
+    background-color:rgb(233, 241, 238);
+}
+
