@@ -3,7 +3,7 @@
 //create object using literal approach
 const user = {
     name: "Azer",
-    age: 20,
+    age: 20,,
     fullinfo:function(){
         return '${this.name} + ${this.age}'
     }

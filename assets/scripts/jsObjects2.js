@@ -50,12 +50,7 @@ let givenRevenue = 40000;
 let sumRevenue = companies.filter(company => (company.name.startsWith("Com")) &&
     (company.createdDate > givenDate) &&
     (company.terminateDate < givenDate2) &&
-    (company.annualRevenue > givenRevenue)).reduce((prev, next) => prev += next.annualRevenue, o);
+    (company.annualRevenue > givenRevenue)).reduce((prev, next) => prev += next.annualRevenue,o);
 
 
-console.log(sumRevenue);
-
-
-
-
-
+      console.log(sumRevenue);

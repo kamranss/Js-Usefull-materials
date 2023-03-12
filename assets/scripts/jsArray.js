@@ -143,7 +143,7 @@ console.log(word.replace("name", "ipsum")); // it is replacing the desired part 
 console.log(word.replace(/Name/i, "Slam"));  // it finds word and replaces whether word within string is upper or lower case
 console.log(word.replace(/Name/g, "Slam"));  // it finds "all words" and replaces words
 console.log(word.replace(/Name/gi, "Slam"));  // it finds "all words" and replaces whether word within string is upper or lower case
-console.log(word.replaceAll("Slam", "Slam"));  // it finds "all words" and replaces with new one
+
 const companies = [
     {
         name: "Company1",
@@ -195,27 +195,4 @@ sumSalary = companies.filter(company=> companies.name.includes("com", 0))
 
 
 
-/******************
- * access array index
- */
 
-const arr4 = [2,3,4,5,6,7,8]
-
-arr[arr.length - 2]; // equals - 7 
-
-
-
-//new version but same result ES-2022
-
-arr.at(-2); // equals - 7
-arr.at(5); // equals - 7
-
-arr.at(-1); // equals - 8
-
-
-// make nested array like flattened
-
-const flattened = [[0,1], [2,3], [4,5]].reduce((accumulator, array)=> {
-
-    return accumulator.concat(array), [];
-})
