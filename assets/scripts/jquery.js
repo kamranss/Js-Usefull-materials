@@ -51,6 +51,41 @@ $("button").click(function(){
 
     $("p").css("color", "red").slideUp(2000).slideDown(2000) // chaining logic within one line one can write several methods
     $("p").css({"color": "red", "opacity": "0.6"}).slideUp(2000).slideDown(2000) // useing several css properties within same object
+
+    //old version
+    document.querySelector("a").setAttribute("href", "google.com")
+    // new version jquery
+    $("a").attr("href", "google.com") // get attribute and set url or any value -- this methods also takes object ass param
+    $("a").attr({"href": "google.com","target": "blank" }) // set several attributes at the same time using object param
+    $("p").append("<b> Salam </b>") // same as append in js
+    $("p").prepend("<b> Salam </b>") // find out yourself
+    $("p").before("<b> Salam </b>") // same as css before
+    $("p").after("<b> Salam </b>") // same as css after
+    $("p").remove() // delete element
+    $("p").empty() // deletes childs of the element
+    $("p").addClass()  // add class to element
+    $("p").removeClass() // remove class from element
+    $("p").toggleClass()  // same toggle as js 
+    $("p").width() // normal with of the element
+    $("p").height() // normal height of the element
+    $("p").innerWidth() // with padding
+    $("p").innerHeight() // with padding
+    $("p").parent() // one parent 
+    $("p").parents() // all parents
+    $("p").parentsUntil("div") // you determine stop point -- like breaking the code
+    $("p").children() // direct child elements // all childs 
+    $("p").siblings()
+    $("p").next()
+    $("p").nextAll()
+    $("p").nextUntil()
+    $("p").prev()
+    $("p").prevAll()
+    $("p").prevUntil()
+    $("p").first()
+    $("p").last()
+    $("p").eq()
+    $("p").filter()
+    $("p").not()
 })
 
 $(document).on("keyup", "input", function(){
@@ -61,6 +96,19 @@ $(document).on("keyup", "input", function(){
 // faidIn faidOut fadeTo FadeToggle
 
 
+// Ajax -- Request to same data -- it is directly comes from jquery
+
+
+$.ajax({
+    url: "url",
+    method: "get",
+    success: function(data){
+        console.log(data);
+    },
+    error: function(data) {
+        console.log(data);
+    }
+})  // simp;e version for accesing data from Api
 
 
 
