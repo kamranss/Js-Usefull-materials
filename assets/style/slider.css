@@ -1,0 +1,84 @@
+.content {
+    position: relative;
+}
+
+.fa-chevron-left {
+    position: absolute;
+    font-size: 40px;
+    top: 290px;
+    left: 18px;
+    color: gold;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.fa-chevron-right {
+    position: absolute;
+    font-size: 40px;
+    top: 290px;
+    right: 2px;
+    color: gold;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.new-content-img {
+    position: relative;
+    width: 1317px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.image1 {
+    position: absolute;
+    left: 0;
+    width: 1317px;
+    height: 600px;
+    background-image: url(https://code.edu.az/wp-content/uploads/2022/04/System_Web.jpg);
+    background-size: cover;
+    transition: z-index 0s;
+    transition: all 2s;
+    opacity: 1;
+}
+
+.image2 {
+    position: absolute;
+    left: 1317px;
+    width: 1317px;
+    height: 600px;
+    background-image: url(https://code.edu.az/wp-content/uploads/2022/04/Digital_Web.jpg);
+    background-size: cover;
+    opacity: 1;
+    z-index: 0;
+    transition: z-index 0s;
+    transition: all 2s;
+}
+
+.image3 {
+    left: 2634px;
+    width: 1317px;
+    height: 600px;
+    background-image: url(https://code.edu.az/wp-content/uploads/2022/04/Design_Web.jpg);
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    z-index: 0;
+    transition: z-index 0s;
+    transition: all 2s;
+}
+
+.image4 {
+    position: absolute;
+    left: -1317px;
+    width: 1317px;
+    height: 600px;
+    background-image: url(https://code.edu.az/wp-content/uploads/2022/04/Programming_Web.jpg);
+    background-size: cover;
+    opacity: 1;
+    z-index: 0;
+    transition: z-index 0s;
+    transition: all 2s;
+}
