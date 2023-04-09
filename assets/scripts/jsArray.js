@@ -87,7 +87,7 @@ let newNumbers3 = numbers.filter(value=> value>2);
 // we can use prev and nex names instead of total and value  
 // in this logic prev stands for previous value of the array and next is next value of the array
 // reduce function can take two parameter 
-//first is function second is some value and it will take this value and sum to given variable 
+// first is function second is some value and it will take this value and sum to given variable 
 let sum = numbers.reduce((total, value)=> total+=value);
 
 let sum2= numbers.reduce((prev,next)=> {prev+=nex}, 10);
@@ -136,8 +136,25 @@ console.log(word.substr(2,4)); // first param indicates where you will start sec
 
 // we should focus to our search element and it is start index first check at home
 
-let num = 5.129;
 
+
+// take any string moify and return only numbers delete all string characters 
+function myfunc(m){
+    let arr = m.split("");
+    let n = arr.filter(char => !isNaN(parseInt(char)));
+    console.log("salam");
+    let newStr = n.join("");
+    return newStr;
+  }
+
+
+ console.log( myfunc("ldjsdjsnkjdhu38727973293792"));
+
+
+
+
+
+let num = 5.129;
 console.log(num.toFixed(1)); // it will round the numbers decimal part according to given condition like rudicing its number
 console.log(word.replace("name", "ipsum")); // it is replacing the desired part of string to given value but only first detected part
 console.log(word.replace(/Name/i, "Slam"));  // it finds word and replaces whether word within string is upper or lower case

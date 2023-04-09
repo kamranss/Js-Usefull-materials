@@ -44,3 +44,5 @@ $(document).ready(function(){
 
 
 })
+
+// we should include cdn in our Html
