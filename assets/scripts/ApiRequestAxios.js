@@ -35,3 +35,19 @@ axios.get('/user?ID=12345') //Api  returns promise and reject
   // if we use frame work we should install npm 
 
   //Frist it resturns promise object thats why we use then to get data
+
+
+
+  axios.get('/user?ID=12345') //Api  returns promise and reject
+  .then(res =>{
+    console.log(res);
+  })
+
+
+  // async approach
+  async function getData(){
+    let result = await axios.get('/user?ID=12345')
+    console.log(result);
+  }
+
+

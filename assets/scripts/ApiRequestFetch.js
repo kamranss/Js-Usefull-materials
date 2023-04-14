@@ -8,7 +8,8 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
 //without then we will not be able to take data
 
 
-// one then returns response object in order to read responce we should use responce.json ( and it returns it to promise again)
+// first then returns response object in order to read responce we should use responce.json ( and it returns it to promise again)
+// second then returns data 
 
 .then(response => response.json())
 .then(json => console.log(json))

@@ -2,10 +2,14 @@ var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
        // Typical action to be performed when the document is ready:
+
+       // if we use jsonParse method the data will be converted to json data
+       console.log(this.responseText);
+       console.log(JSON.parse(this.responseText));
        document.getElementById("demo").innerHTML = xhttp.responseText;
     }
 };
-xhttp.open("GET", "filename", true);
+xhttp.open("GET", "https://jsonplaceholder.typicode.com/users");
 xhttp.send();
 
-// it returns string 
+// it returns string data other API methods most times returns json file 

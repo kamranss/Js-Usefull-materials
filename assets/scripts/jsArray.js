@@ -130,7 +130,7 @@ console.log(word.startsWith("d")); // returns true/false if the existing string 
 console.log(word.split(" ")); // splits the given string and returns massive array
 console.log(word.split(" ").join(",")); // split returns array but after join returns string
 
-console.log(word.slice(0,5)); // returns string takes string from according to given condition first param is start point second param is end but is last param is 5 it will take string from index 4 but not 5
+console.log(word.slice(0,5)); // returns string takes string from according to given condition first param is start point second param is end but is last param is 5 it will take string from 0 to index 4(but not 5) 
 console.log(word.substring(2)); // it is smilar to slice returns string yo can assign start point and end but also you can work without assigning end point
 console.log(word.substr(2,4)); // first param indicates where you will start second param indicates how many indexies will be taken after start point
 
@@ -138,7 +138,7 @@ console.log(word.substr(2,4)); // first param indicates where you will start sec
 
 
 
-// take any string moify and return only numbers delete all string characters 
+// take any string moidfy and return only numbers delete all string characters 
 function myfunc(m){
     let arr = m.split("");
     let n = arr.filter(char => !isNaN(parseInt(char)));
